@@ -1,0 +1,18 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+<form action="/converter/convert"  method="get">
+	<input name="temp_c" value="<%= @celcius %>" placeholder="Temperature in Celcius">
+	<button>Convert!</button>
+</form>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+<script>
+$(document).ready(
+show_chart(<%= @celcius %>, <%= @farhenheit %>)
+);
+</script>
