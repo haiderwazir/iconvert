@@ -4,8 +4,8 @@ class ConverterController < ApplicationController
   end
 
   def convert
-  	@celcius = params[:temp_c].to_f if params[:temp_c]
-  	@farhenheit = Convert.convert_celcius(@celcius)
+  	@celcius = params[:temp_c].to_f
+  	@farhenheit = Convert.convert_celcius(@celcius) if @celcius
   end
 
 end

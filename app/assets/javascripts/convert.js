@@ -7,7 +7,7 @@ function show_chart(c,f) {
             text: 'Temperatures'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            categories: ['Celcius', 'Farhenheit']
         },
         credits: {
             enabled: false
